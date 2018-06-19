@@ -20,6 +20,7 @@
 		761D496E20D8EBA1004D2838 /* Person.pbobjc.m in Sources */ = {isa = PBXBuildFile; fileRef = 761D496C20D8EBA1004D2838 /* Person.pbobjc.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		761D497220D8EBF5004D2838 /* Person.proto in Resources */ = {isa = PBXBuildFile; fileRef = 761D497020D8EBF5004D2838 /* Person.proto */; };
 		761D497320D8EBF5004D2838 /* CommonShop.proto in Resources */ = {isa = PBXBuildFile; fileRef = 761D497120D8EBF5004D2838 /* CommonShop.proto */; };
+		761D497720D8F3D0004D2838 /* WPSocketManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 761D497620D8F3D0004D2838 /* WPSocketManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +64,8 @@
 		761D496C20D8EBA1004D2838 /* Person.pbobjc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.pbobjc.m; sourceTree = "<group>"; };
 		761D497020D8EBF5004D2838 /* Person.proto */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Person.proto; sourceTree = "<group>"; };
 		761D497120D8EBF5004D2838 /* CommonShop.proto */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CommonShop.proto; sourceTree = "<group>"; };
+		761D497520D8F3D0004D2838 /* WPSocketManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WPSocketManager.h; sourceTree = "<group>"; };
+		761D497620D8F3D0004D2838 /* WPSocketManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WPSocketManager.m; sourceTree = "<group>"; };
 		C36DDF5CACC6E21EAB3D5F87 /* Pods-protocolbufDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-protocolbufDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-protocolbufDemo/Pods-protocolbufDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		D7E43563BDA70C51A32FA09C /* Pods-protocolbufDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-protocolbufDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-protocolbufDemo/Pods-protocolbufDemo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -127,6 +130,7 @@
 		761D493520D8E4BE004D2838 /* protocolbufDemo */ = {
 			isa = PBXGroup;
 			children = (
+				761D497420D8F387004D2838 /* Manager */,
 				761D496F20D8EBD0004D2838 /* protoResource */,
 				761D496820D8EB90004D2838 /* protoModel */,
 				761D493620D8E4BE004D2838 /* AppDelegate.h */,
@@ -178,6 +182,15 @@
 				761D497020D8EBF5004D2838 /* Person.proto */,
 			);
 			path = protoResource;
+			sourceTree = "<group>";
+		};
+		761D497420D8F387004D2838 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				761D497520D8F3D0004D2838 /* WPSocketManager.h */,
+				761D497620D8F3D0004D2838 /* WPSocketManager.m */,
+			);
+			path = Manager;
 			sourceTree = "<group>";
 		};
 		A4088A593BC11040DA339F80 /* Frameworks */ = {
@@ -345,6 +358,7 @@
 				761D493B20D8E4BE004D2838 /* ViewController.m in Sources */,
 				761D494620D8E4C0004D2838 /* main.m in Sources */,
 				761D493820D8E4BE004D2838 /* AppDelegate.m in Sources */,
+				761D497720D8F3D0004D2838 /* WPSocketManager.m in Sources */,
 				761D496E20D8EBA1004D2838 /* Person.pbobjc.m in Sources */,
 				761D496D20D8EBA1004D2838 /* CommonShop.pbobjc.m in Sources */,
 			);

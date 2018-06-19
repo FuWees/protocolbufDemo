@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "Person.pbobjc.h"  //模型
+#import "WPSocketManager.h"
 
 @interface ViewController ()
 @property (nonatomic, strong) NSData *myData; //数据
@@ -81,6 +82,22 @@
     
     self.showView.text = str;
 }
+
+- (IBAction)socketConnect:(id)sender {
+    __weak typeof(self) ws = self;
+    [[WPSocketManager manager] connectCompletion:^(BOOL finish, NSError *error) {
+        if (finish) {
+            ws.showView.text = @"socket连接成功";
+        }else{
+            ws.showView.text = [NSString stringWithFormat:@"socket连接失败,错误信息:%@",error];
+        }
+    }]; //建立socket连接
+    
+}
+- (IBAction)socketDisConnect:(id)sender {
+    [[WPSocketManager manager] disconnect];
+}
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
